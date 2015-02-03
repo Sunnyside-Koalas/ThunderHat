@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="/session" method="POST">
+  <label>
+    Email:
+    <input type="text" name="email_address" />
+  </label>
+
+  <label>
+    Password:
+    <input type="text" name="password" />
+  </label>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <button>Sign In</button>
+
+ <br>
+ <br>
+  <a href="/new">Create New Account
+</form>
+</body>
+</html>

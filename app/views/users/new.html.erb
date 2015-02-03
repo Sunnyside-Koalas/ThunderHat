@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Create a new account</h1>
+	<br>
+
+	<form method="POST" action="/users/:user_id/users">
+		NAME
+		<input type="text" name="name"/>
+		email
+		<input type="text" name="email_address"/>
+		password
+		<input type="text" name="password"/>
+		location
+		<input type="text" name="location"/>
+  		favorite artist
+		<input type="text" name="favorite_artist"/>
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<input type="submit"/>
+	</form>
+</body>
+</html>
+

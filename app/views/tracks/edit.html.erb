@@ -1,0 +1,22 @@
+<form method="POST" action=<%="/tracks/:user_id/tracks/" + @id %>>
+	<input type="hidden" name="_method" value="PUT"/>
+		NEW NAME
+		<input type="text" name="name"/>
+		NEW GENRE
+		<input type="text" name="genre"/>
+		currently_relevant?
+		<select name="currently_relevant">
+  			<option value="true">YES</option>
+  			<option value="false">NO</option><br>
+  		</select>
+		<input type="hidden" name="id" value=<%=@id%>/>
+		<input type="submit"/>
+</form>
+<br>
+or
+<br>
+<br>
+<form method="POST" action=<%="/bands/" + @id %>>
+	<input type="hidden" name="_method" value="DELETE"/>
+		<input type="hidden" name="id" value=<%=@id%>/>
+		<button>DELETE BAND</button>

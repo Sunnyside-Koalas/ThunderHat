@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+top 20
+	<form method="POST" action="/tracks/:user_id/tracks">
+		<input name="title" type="hidden" value="title"/>
+		
+		<input name="permalink_url" type="hidden" value="permalink_url"/>
+		
+		<input name="description" type="hidden" value="description"/>
+		
+		<input name="avatar_url" type="hidden"value="avatar_url"/>
+		
+		<input name="user_id" type="hidden" value="user_id"/>
+
+  		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<button>Save</button>
+	
+	</form>
+</body>
+</html>
+
+
+
+
