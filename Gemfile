@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'pry-rails'
 
+gem 'soundcloud'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

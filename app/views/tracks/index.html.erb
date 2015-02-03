@@ -3,7 +3,7 @@
 	<title></title>
 </head>
 <body>
-  <p><%= link_to "Top 20", '/' %></p>
+  <p><%= link_to "Top 20", static_pages_top_twenty_path %></p>
 <p><%= @user.name %>, here are your tracks:</p>
 	<form method="POST" action="/tracks/:user_id/tracks">
 		<input name="title" type="hidden" value="title"/>
