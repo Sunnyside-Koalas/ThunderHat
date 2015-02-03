@@ -1,4 +1,12 @@
 <h1>Top 20 Songs</h1>
+<ul>
+<% @tracks.each do |t| %>
+  <li>
+  <%= t.title %>
+  <%= link_to t.title, t.permalink_url %>
+  </li>
+<% end %>
+</ul>
 
 
 
